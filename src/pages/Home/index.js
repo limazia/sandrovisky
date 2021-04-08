@@ -26,6 +26,7 @@ export default function Home() {
         id="video"
         onClick={handleVideoFullScreen}
         src={bgVideo}
+        autoPlay
         loop
       ></video>
     </div>
