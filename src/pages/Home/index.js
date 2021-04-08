@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactAudioPlayer from "react-audio-player";
 
 import bgLight from "../../assets/images/bgLight.png";
 import bgDark from "../../assets/images/bgDark.png";
@@ -11,20 +12,20 @@ export default function Home() {
 
   useEffect(() => {
     setInterval(() => {
-      const audio = new Audio(scarySound);
-      audio.play();
-      audio.loop = true;
-
       const imageList = [bgLight, bgDark];
-      const imageRandom = imageList[Math.floor(Math.random() * imageList.length)];
+      const imageRandom =
+        imageList[Math.floor(Math.random() * imageList.length)];
       setSelectedImage(imageRandom);
-    }, 1);
+    }, 10);
   }, []);
 
   return (
-    <div
-      className={styles.mainDiv}
-      style={{ backgroundImage: `url(${selectedImage})` }}
-    ></div>
+    <>
+      <ReactAudioPlayer src={scarySound} autoPlay />
+      <div
+        className={styles.mainDiv}
+        style={{ backgroundImage: `url(${selectedImage})` }}
+      ></div>
+    </>
   );
 }
