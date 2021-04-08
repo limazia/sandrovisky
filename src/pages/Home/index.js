@@ -20,7 +20,11 @@ export default function Home() {
 
   return (
     <>
-      <ReactAudioPlayer src={scarySound} autoPlay />
+      <ReactAudioPlayer 
+        src={scarySound} 
+        autoPlay 
+        controls 
+      />
       <div
         className={styles.mainDiv}
         style={{ backgroundImage: `url(${selectedImage})` }}
