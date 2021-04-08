@@ -30,6 +30,7 @@ export default function Home() {
         poster={bgPoster}
         autoPlay
         loop
+        controls
       ></video>
     </div>
   );
