@@ -13,8 +13,7 @@ export default function Home() {
   useEffect(() => {
     setInterval(() => {
       const imageList = [bgLight, bgDark];
-      const imageRandom =
-        imageList[Math.floor(Math.random() * imageList.length)];
+      const imageRandom = imageList[Math.floor(Math.random() * imageList.length)];
       setSelectedImage(imageRandom);
     }, 10);
   }, []);
