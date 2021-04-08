@@ -13,10 +13,4 @@
   object-fit: cover;
 }
 
-.mainDiv video::-webkit-media-controls {
-  display: none !important;
-}
-
-.mainDiv #video {
-  z-index: 2147483648;
-}
+ 
