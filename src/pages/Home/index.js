@@ -1,6 +1,5 @@
 import React from "react";
 
-import bgPoster from "../../assets/images/bgPoster.png";
 import bgVideo from "../../assets/video/bgVideo.mp4";
 
 import styles from "./styles.module.css";
@@ -27,7 +26,6 @@ export default function Home() {
         id="video"
         onClick={handleVideoFullScreen}
         src={bgVideo}
-        poster={bgPoster}
         autoPlay
         loop
         controls
