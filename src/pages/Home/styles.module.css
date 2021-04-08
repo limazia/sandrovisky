@@ -1,9 +1,22 @@
 .mainDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
   height: 100%;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
+}
+
+.mainDiv video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.mainDiv video::-webkit-media-controls {
+  display: none !important;
+}
+
+.mainDiv #video {
+  z-index: 2147483648;
 }
